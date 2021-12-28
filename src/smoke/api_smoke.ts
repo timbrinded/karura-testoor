@@ -8,7 +8,7 @@ import { ApiPromise } from "@polkadot/api";
 dotenv.config();
 export const ApiTests = async () => {
 
-    describe("Basic acala-js smoke tests", () => {
+    describe("Basic Acala-js smoke tests 🚀", () => {
         let conn: ApiPromise, testingPairs;
         let balBefore;
 
@@ -66,9 +66,7 @@ export const ApiTests = async () => {
             const hash = await transferToken(conn,signer,recipient_addr,amt,token);
 
             expect(hash).to.not.be.undefined;
-            console.log(`\tWaiting two blocks for TXN to finalise`);
             await waitForBlock(conn);
-
             const bal_after = await getTokenBal(conn, recipient_addr,"KAR");
             // console.log(bal_after.free);
             //expect(Number(balAfter.toString())).to.be.moreThan(token_bal_before);

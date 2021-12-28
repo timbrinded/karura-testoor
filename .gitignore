@@ -5,6 +5,7 @@
 /e2e-tests/build
 /scripts/build
 /target
+/substrate-api-sidecar
 yarn-error.log
 **/*.rs.bk
 .env.*

@@ -6,7 +6,7 @@ import {get} from "../utils/comms"
 dotenv.config();
 
 export const SidecarTests = async () => {
-    describe("When running Sidecar", async () => {
+    describe("When running Sidecar 🔎", async () => {
         const HOST = process.env.SIDECAR_ENDPOINT;
         let testingPairs, alice_addr;
 

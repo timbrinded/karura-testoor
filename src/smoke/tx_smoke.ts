@@ -36,7 +36,7 @@ export const TxTests = async () => {
         };
     }
 
-    describe("TxWrapper Tests", async () => {
+    describe("TxWrapper Tests 🔐", async () => {
 
         const amount = "900719";
 
